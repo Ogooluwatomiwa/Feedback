@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+</head>
+<body>
+    <div id="pageupper"><a href="/page">
+            <p>RETAIL FEEDBACK COMMUNITY</p></a>
+            <a href="/page"><img src="{% static 'feeback.png' %}" width="400"></a>
+    </div>
+    <div id="par2">
+            <P>your feedback, our improvement...</P>
+    </div>
+    <div id="pagemid">
+            <div id="select">
+                <button id="button">
+                    <p id="selecttext">Select Retail Store</p>
+                <img src="{% static 'images.png' %}" id="pointer">
+                </button>
+                <ul id="list">
+                    <li class="options"><span><img src="{% static 'Morrisons.png' %}" id="morrisons"></span> Morrisons</li>
+                    <li class="options"><span><img src="{% static 'tesco.png' %}" id="tesco"></span> Tesco Superstore</li>
+                    <li class="options"><span><img src="{% static 'Boots.png' %}" id="boots"></span> Boots</li>
+                    <li class="options"><span><img src="{% static 'poundland.png' %}" id="poundland"></span> Poundland</li>
+                    <li class="options"><span><img src="{% static 'ASDA.png' %}" id="asda"></span> Asda Stores Limited</li>
+                    <li class="options"><span><img src="{% static 'Sainsburys.png' %}" id="sainsbury"></span> Sansbury's</li>
+                    <li class="options"><span><img src="{% static 'ALDI.png' %}" id="aldi"></span> Aldi</li>
+                    <li class="options"><span><img src="{% static 'Costco.jpg' %}" id="cotsco"></span> Cotsco</li>
+                    <li class="options"><span><img src="{% static 'Waitrose.png' %}" id="waitrose"></span> Waitrose</li>
+                </ul>
+            </div>
+            
+            <form method="POST" action="" id="form">{% csrf_token %}
+                    <div id="forenames">
+                    <label for="fname">Forenames: </label>
+                    <input type="text" id="fname" name="fname" placeholder="first name and middle name" size="25px" required><br><br>
+                    </div>
+                    <div id="surname">
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lname" placeholder="Surname" size="25px" required><br><br>
+                    </div>
+                    <div id="email">
+                    <label for="email">Email address: </label>
+                    <input type="text" id="email" name="email" size="35px" placeholder="e.g  abcde@gmail.com" required><br><br>
+                    </div>
+                    <div id="feedback">
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="Enter text here..." required></textarea><br><br>
+                    </div>
+                    <div>
+                    <button id="submit" >Submit</button>
+                    </div>
+            </form>
+            <div id="container">   
+                <div id="popup">
+                <img src="{% static 'oklogo.png' %}"> 
+                <h2>Thank You</h2>  
+                Your feedback has been submitted
+                <a href="/page"><button id="ok">OK</button></a>
+                </div> 
+            </div>       
+    </div>
+    <div id="pagedown">
+        <div id="pagedown1">
+            <a href="/page" id="country" class="pagebottom">United Kingdom</a>
+            <a href="/page" id="founding"class="pagebottom">Neuro Neutral since 2007</a>
+        </div>
+        <div id="pagedown2">
+            <a href="/page" id="privacy" class="pagebottom">Privacy</a>
+            <a href="/page" id="terms" class="pagebottom">Terms</a>
+            <a href="/page" id="settings" class="pagebottom">Settings</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'main.js' %}">
+</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+body {
+    background: rgb(26,28,30);
+    background: linear-gradient(180deg, rgb(229, 240, 241) 50%, rgb(207, 224, 224) 50%, rgb(211, 237, 238) 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+#pageupper a {
+    font-size: 50px;
+    font-family: system-ui;
+    font-weight: bolder;
+    color: rgb(31, 29, 29);
+    text-decoration: none;
+}
+#par2 p {
+    font: system-ui;
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 5px;
+    color: red;
+}
+
+#select {
+    background: #1a7a7e;
+    align-items: center;
+    justify-content: space-between;
+    color: aqua;
+    margin-top: 10em;
+    width: 100em;
+    height: 90px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    position: relative;
+
+}
+#pageupper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#pointer {
+    width: 15px;
+    margin-left: 30em;
+}
+#select ul {
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    list-style: none;
+    background: #1a7b7ec2;
+    color: #ffffff;
+    width: 45%;
+    border-radius: 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+li:hover {
+    font-weight: 600;
+}
+#list {
+    font-size: x-large;
+}
+#select ul.open {
+    max-height: 200em;
+}
+#select button {
+    width: 50%;
+    position: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 25px;
+    border-radius: 4px;
+}
+#select p {
+    all: unset;
+    font-size: 22px ;
+    font: 30px Georgia;
+    
+}
+#select ul li {
+    padding: 20px 20px;
+    cursor: pointer;
+}
+#morrisons {
+    width: 100px;
+}
+#tesco {
+    width: 100px;
+    height: 40px;
+}
+#boots {
+    width: 100px;
+    height: 40px;
+}
+#poundland {
+    width: 100px;
+    height: 40px;
+}
+#asda {
+    width: 100px;
+    height: 40px;
+}
+#sainsbury {
+    width: 100px;
+    height: 40px;
+}
+#aldi {
+    width: 100px;
+    height: 40px;
+}
+#cotsco {
+    width: 100px;
+    height: 40px;
+}
+#waitrose {
+    width: 100px;
+}
+
+#pagedown {
+    background: #1a7a7e;
+    width: 100%;
+    height: 10em;
+    margin-top: 70em;
+}
+#pagedown1 {
+    display: flex;
+}
+#pagedown2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+#country {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 0;
+    text-decoration: none;
+    color: black;
+}
+#founding {
+    font-size: 30px;
+    margin-left: 20em;
+    margin-top: 0;
+    text-decoration: none;
+    color: black;
+}
+#privacy {
+    font-size: 25px;
+    margin-left: 0em;
+    text-decoration: none;
+    color: black;
+}
+#terms {
+    font-size: 25px;
+    margin-left: 10em;
+    text-decoration: none;
+    color: black;
+}
+#settings {
+    font-size: 25px;
+    margin-left: 10em;
+    text-decoration: none;
+    color: black;
+}
+.pagebottom:hover {
+    font-weight: 600;
+}
+
+#form {
+    background: #1a7b7e;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    border-radius: 4px;
+    width: 45%;
+    height: 30em;
+    top: 5px;
+    left: 5%;
+    font-size: 20px;
+    padding: 50px 50px;
+    color: #ffffff;
+    animation: transitions 1s;
+
+}
+@keyframes transitions {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#form input {
+    font-size: 18px;
+    
+}
+#form label {
+    width: 100px;
+    display: inline-block;
+}
+#form textarea {
+    font-size: 15px;
+}
+#submit {
+    width: 18%;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7.8em;
+    font-weight: bolder;
+
+}
+#popup {
+    font-size: xx-large;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1a7a7e;
+    width: 20em;
+    height: 8em;
+    top: 40%;
+    left: 35%;
+    animation: transitions 1s;
+}
+#container {
+    background: rgba(0, 0, 0, 0.637);
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+#popup img{
+    width: 120px;
+    margin-top: -80px;
+}
+#popup h2 {
+    margin-top: 5px;
+}
+#ok {
+    width: 150px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+#container.show {
+    visibility: visible;
+}
