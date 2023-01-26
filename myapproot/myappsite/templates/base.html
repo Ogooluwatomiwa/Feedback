@@ -35,26 +35,28 @@
                 </ul>
             </div>
             
-            <form method="POST" action="" id="form">{% csrf_token %}
-                    <div id="forenames">
-                    <label for="fname">Forenames: </label>
-                    <input type="text" id="fname" name="fname" placeholder="first name and middle name" size="25px" required><br><br>
-                    </div>
-                    <div id="surname">
-                    <label for="lname">Last name: </label>
-                    <input type="text" id="lname" name="lname" placeholder="Surname" size="25px" required><br><br>
-                    </div>
-                    <div id="email">
-                    <label for="email">Email address: </label>
-                    <input type="text" id="email" name="email" size="35px" placeholder="e.g  abcde@gmail.com" required><br><br>
-                    </div>
-                    <div id="feedback">
-                    <label for="feedback">Feedback</label>
-                    <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="Enter text here..." required></textarea><br><br>
-                    </div>
-                    <div>
-                    <button type="submit" id="submit" >Submit</button>
-                    </div>
+            <form method="POST" action="{% url 'page' %}" id="form">
+	      {% csrf_token %}
+	      {{ form }}
+                    <!-- <div id="forenames"> -->
+                    <!-- <label for="fname">Forenames: </label> -->
+                    <!-- <input type="text" id="fname" name="fname" placeholder="first name and middle name" size="25px" required><br><br> -->
+                    <!-- </div> -->
+                    <!-- <div id="surname"> -->
+                    <!-- <label for="lname">Last name: </label> -->
+                    <!-- <input type="text" id="lname" name="lname" placeholder="Surname" size="25px" required><br><br> -->
+                    <!-- </div> -->
+                    <!-- <div id="email"> -->
+                    <!-- <label for="email">Email address: </label> -->
+                    <!-- <input type="text" id="email" name="email" size="35px" placeholder="e.g  abcde@gmail.com" required><br><br> -->
+                    <!-- </div> -->
+                    <!-- <div id="feedback"> -->
+                    <!-- <label for="feedback">Feedback</label> -->
+                    <!-- <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="Enter text here..." required></textarea><br><br> -->
+                    <!-- </div> -->
+                    <!-- <div> -->
+                    <button type="submit" id="submit" value="Submit">Submit</button> 
+                    <!-- </div> -->
             </form>
             <div id="container">   
                 <div id="popup">

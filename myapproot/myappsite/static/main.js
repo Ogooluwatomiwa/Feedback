@@ -25,10 +25,10 @@ for(option of options){
         form.style.display = 'block';
     }
 } 
-form.onsubmit= function(e) {
-    e.preventDefault();
-    container.classList.add('show');
-};
+// form.onsubmit= function(e) {
+//     e.preventDefault();
+//     container.classList.add('show');
+// };
     
 ok.onclick= function() {
     container.classList.remove('show');
